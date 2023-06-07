@@ -1,10 +1,17 @@
+@import "/css/section1.css";
+@import "/css/section2.css";
+@import "/css/section3.css";
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;300;900&display=swap');
+
+/* Estilos Gerais */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: Geologica, sans-serif;
   scroll-behavior: smooth;
 }
 
+/* Estilos do Fullpage.js */
 #fullpage {
   width: 100%;
   height: 100vh;
@@ -23,104 +30,13 @@ body {
 
 .section h2 {
   font-size: 3rem;
-  color: #000;
+  color: #5d48a8;
 }
 
 .section p {
   font-size: 1.5rem;
-  color: #000;
+  color: #e7b977;
 }
-
-/* INICIO SECTION 1 */
-
-#section1 {
-  position: relative;
-  z-index: 0;
-}
-
-#section1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../images/losango.png'), linear-gradient(to bottom, rgba(255, 128, 201, 0.8), rgba(156, 108, 211, 0.8));
-  background-repeat: repeat;
-  z-index: -1;
-}
-
-/* SECTION 2 */
-
-#section2 {
-  position: relative;
-  background: linear-gradient(45deg, #eed4fd, #fac0fa);
-  background-size: 200% 200%;
-  animation: gradientAnimation 10s ease infinite;
-  overflow: hidden;
-  z-index: 0;
-}
-
-#section2::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  transform: rotate(45deg);
-  background-image: linear-gradient(45deg, transparent 50%, rgba(250, 186, 234, 0.5) 50%);
-  background-size: 40px 40px;
-  z-index: -1;
-}
-
-#section2::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  transform: rotate(-45deg);
-  background-image: linear-gradient(45deg, transparent 50%, rgba(217, 184, 255, 0.5) 50%);
-  background-size: 40px 40px;
-  z-index: -1;
-}
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
-
-/* SECTION 3 */
-
-#section3 {
-  position: relative;
-  background: linear-gradient(to bottom, rgba(255, 128, 201, 0.8), rgba(156, 108, 211, 0.8)),
-              repeating-linear-gradient(-45deg, transparent, transparent 10px, #ccc 10px, #ccc 20px);
-}
-
-#section3::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  width: 100px;
-  height: 100px;
-  z-index: 1;
-}
-
-/* FIM SECTION 3 */
 
 .scroll-up {
   position: fixed;
@@ -128,18 +44,28 @@ body {
   bottom: 20px;
   width: 40px;
   height: 40px;
-  background-color: black;
-  color: white;
+  background-color: rgba(255, 128, 201, 0.8);
+  color: #f5f5f5;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 24px;
   transition: background-color 0.3s, color 0.3s;
-  border: 2px solid black;
+  border: 2px solid #f5f5f5;
 }
 
 .scroll-up:hover {
-  background-color: white;
-  color: black;
+  background-color: rgba(250, 179, 219, 0.8);
+  background-color: rgba(156, 108, 211, 0.8);
+  color: rgba(250, 179, 219, 0.8);
+  border: 2px solid rgba(250, 179, 219, 0.8);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 100px;
+  padding: 10px;
 }
