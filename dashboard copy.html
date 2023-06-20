@@ -4,7 +4,7 @@
   <title>Fintech</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -34,10 +34,65 @@
 
   <!-- Conteúdo principal -->
   <div id="fullpage">
+
+
     <div id="section1" class="section">
-      <h2>Seção 1</h2>
-      <p>Conteúdo da Seção 1</p>
+      <div class="dashboard-content">
+        <div class="left-column">
+          <h2>Título do Dashboard</h2>
+          <div class="dashboard-card">
+            <h4>Minhas Despesas - Mês/Ano</h4>
+            <p class="valor positivo">+ R$ 3.100,00</p>
+          </div>
+          <div class="dashboard-card">
+            <h4>Receitas</h4>
+            <p class="valor positivo">+ R$ 3.100,00</p>
+          </div>
+          <div class="dashboard-card">
+            <h4>Despesas</h4>
+            <p class="valor negativo">- R$ 2.970,52</p>
+          </div>
+          <div class="dashboard-card">
+            <h4>Saldo</h4>
+            <p class="valor negativo">- R$ 129,48</p>
+          </div>
+          <div class="table-wrapper">
+            <table class="dashboard-table">
+              <thead>
+                <tr>
+                  <th>Metas e Investimentos</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Emergência</td>
+                  <td>R$ 0</td>
+                </tr>
+                <tr>
+                  <td>Estudo</td>
+                  <td>R$ 0</td>
+                </tr>
+                <tr>
+                  <td>Lazer</td>
+                  <td>R$ 0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="chart-wrapper">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+        
+      </div>
     </div>
+    
+
+<-- FOOTER -->
+
     <div id="section2" class="section">
       <h2>Seção 2</h2>
       <p>Conteúdo da Seção 2</p>
@@ -63,6 +118,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/js/chart.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>

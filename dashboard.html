@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fintech</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand">Fintech</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1" data-index="0">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2" data-index="1">Seção 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3" data-index="2">Configurações</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <div id="fullpage">
+
+
+    <div id="section1" class="section">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Dashboard</h2>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6 col1">
+          <table class="dashboard-table">
+            <thead>
+            <tr>
+              <th colspan="2">Minhas Despesas - Mês/Ano</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Receitas</td>
+              <td class="valor positivo">+ R$ 3.100,00</td>
+            </tr>
+            <tr>
+              <td>Despesas</td>
+              <td class="valor negativo">- R$ 2.970,52</td>
+            </tr>
+            <tr>
+              <td>Saldo</td>
+              <td class="valor saldo">+ R$ 129,48</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="text-right"><a href="#section2">Ver últimos balanços</a></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="col-md-6 col2">
+          <div class="row">
+            <div class="col-md-12">
+              <table class="dashboard-table">
+                <tr>
+                  <th>Despesas por categoria</th>
+                </tr>
+              </table>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6">
+              <div class="chart-container">
+                <canvas id="pieChart"></canvas>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div id="legend">
+                <table class="legend-table">
+                  <tbody>
+                    <!-- As linhas da tabela serão adicionadas dinamicamente pelo JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="row">
+        <div class="col-md-6 col3">
+          <table class="dashboard-table">
+            <thead>
+              <tr>
+                <th colspan="2">Metas e investimentos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Emergência</td>
+                <td class="valores">R$ 0</td>
+              </tr>
+              <tr>
+                <td>Estudo</td>
+                <td class="valores">R$ 0</td>
+              </tr>
+              <tr>
+                <td>Lazer</td>
+                <td class="valores">R$ 0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6 col4">
+          <table class="dashboard-table">
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <div id="section2" class="section">
+      <h2>Seção 2</h2>
+      <p>Conteúdo da Seção 2</p>
+    </div>
+
+    <div id="section3" class="section">
+      <h2>Seção 3</h2>
+      <p>Conteúdo da Seção 3</p>
+      <div class="footer">
+        Todos os direitos reservados.
+      </div>
+    </div>
+
+  </div>
+
+  <a class="scroll-up" href="#section1"><i class="fas fa-chevron-up"></i></a>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/chart.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

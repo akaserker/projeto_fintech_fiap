@@ -1,18 +1,150 @@
 /* INICIO SECTION 1 */
 
 #section1 {
-    position: relative;
-    z-index: 0;
-  }
+  position: relative;
+  z-index: 0;
+}
+
+#section1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/losango.png'), linear-gradient(to bottom, rgba(255, 128, 201, 0.8), rgba(156, 108, 211, 0.8));
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+/* CONTENT SECTION1 */
+
+#section1 {
+  justify-content: center;
+}
+
+#section1 h2 {
+  font-size: 30px;
+}
+
+.col1 {
+  min-height: 200px;
+}
+
+.col2 {
+  background-color: #e9e9e9;
+  min-height: 300px;
+}
+
+.col3 {
+  background-color: #f9f9f9;
+  min-height: 150px;
+}
+
+.col4 {
+  background-color: #c0c0c0;
+  min-height: 250px;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  width: 50%;
+  height: 40px;
+}
+
+.dashboard-table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.dashboard-table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dashboard-table .valor {
+  text-align: right;
+}
+
+.dashboard-table .positivo {
+  color: green;
+}
+
+.dashboard-table .negativo {
+  color: orange;
+}
+
+.dashboard-table .saldo {
+  color: blue;
+}
+
+.dashboard-table .valores {
+  text-align: right;
+}
+
+.col1,
+.col3 {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.col2,
+.col4 {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+.chart-container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: 0 auto; /* Adicione esta linha para centralizar horizontalmente */
+}
+
+#pieChart {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
   
-  #section1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/losango.png'), linear-gradient(to bottom, rgba(255, 128, 201, 0.8), rgba(156, 108, 211, 0.8));
-    background-repeat: repeat;
-    z-index: -1;
-  }
+}
+
+#legend {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.legend-table {
+  width: auto;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.legend-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.legend-table .color-box {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+.legend-table .legend-label {
+  white-space: nowrap;
+  text-align: left;
+}

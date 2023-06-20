@@ -1,0 +1,16 @@
+/* Estilos do Fullpage.js */
+#fullpage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}  
+
+  #fp-nav.fp-right ul li a span {
+    background-color: #af9eee;
+  }
+
+  #fp-nav.fp-right ul li a.active span {
+    background-color: #5d48a8;
+  }
+  

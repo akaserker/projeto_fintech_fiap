@@ -1,0 +1,16 @@
+#menu {
+  position: sticky;
+  top: 0;
+  background-color: #5d48a8 !important;
+  z-index: 9999;
+}
+
+#menu .navbar-brand {
+  color: #e65bc3;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #5d48a8;
+}
