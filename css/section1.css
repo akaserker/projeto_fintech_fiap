@@ -17,14 +17,18 @@
   z-index: -1;
 }
 
-/* CONTENT SECTION1 */
-
 #section1 {
   justify-content: center;
 }
 
 #section1 h2 {
+  display: inline-block;
   font-size: 30px;
+}
+
+#dashboard-heading {
+  display: inline-block;
+  text-align: right;
 }
 
 .col1 {
@@ -103,6 +107,38 @@
   background-color: #ddd;
   padding: 20px;
 }
+
+.month-selector__button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.month-selector__button--previous,
+.month-selector__button--next {
+  color: purple;
+  border-radius: 10px;
+  background-color: #fce3f2; /* Cor de fundo rosa claro */
+  padding: 5px;
+  margin: auto;
+}
+
+.month-selector__button:hover,
+.month-selector__button:focus,
+.month-selector__button:active {
+  border: none;
+}
+
+.month-selector__button:hover i,
+.month-selector__button:focus i,
+.month-selector__button:active i {
+  color: pink;
+}
+
+
 
 .chart-container {
   width: 200px;
