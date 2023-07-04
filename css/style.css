@@ -3,6 +3,7 @@
 
 @import "/css/section1.css";
 @import "/css/section2.css";
+@import "/css/section2_form.css";
 @import "/css/section3.css";
 @import "/css/scrollup.css";
 
@@ -27,12 +28,12 @@ body {
 
 .section h2 {
   font-size: 3rem;
-  color: #5d48a8;
+  color: #e65bc3;
 }
 
 .section p {
   font-size: 1.5rem;
-  color: #e7b977;
+  color: #5d48a8;
 }
 
 .fp-tableCell{
