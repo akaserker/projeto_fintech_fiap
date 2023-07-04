@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  // Código existente...
 
   // Rolar suavemente para a Seção 1 quando a flecha for clicada
   document.querySelector('.scroll-up').addEventListener('click', function() {
@@ -25,3 +24,10 @@ for (var i = 0; i < navLinks.length; i++) {
     fullpage_api.moveTo(sectionIndex + 1);
   });
 }
+
+
+/* LINK SAIR AJUSTE CONFLITO FULLPAGE */
+
+document.getElementById('sair-link').addEventListener('click', function() {
+  window.location.href = 'index.html';
+});

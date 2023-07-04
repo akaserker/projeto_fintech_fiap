@@ -27,7 +27,7 @@ a {
 }
 
 a:hover {
-  color: #e65bc3;
+  color: #ffffff;
   text-decoration: none;
   background-color: transparent;
 }
@@ -46,9 +46,15 @@ a:hover {
     text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
     background-clip: text;
     -webkit-background-clip: text;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: bold;
+    text-align: left;
 }
+
+#login-center{
+text-align: center;
+}
+
 
 .section p {
   font-size: 1.5rem;

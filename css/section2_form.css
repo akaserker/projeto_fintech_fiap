@@ -48,16 +48,6 @@
   }
 }
 
-#section2 h2 {
-  color: #5d48a8;
-  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 40px;
-  font-weight: bold;
-  padding-bottom: 30px;
-}
-
 .login-form {
   display: inline-block;
   text-align: center;
@@ -66,7 +56,6 @@
   border-radius: 10px;
   width: 50%;
 }
-
 
 .login-form label {
   color: #ffffff;

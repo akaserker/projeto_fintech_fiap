@@ -1,5 +1,25 @@
 /* INICIO SECTION 1 */
 
+
+
+#section-about {
+  padding-top: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-indent: 20px;
+}
+
+.section-about {
+  text-indent: 20px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 10px;
+  width: 300px; /* Defina o valor desejado para a largura da imagem */
+  height: auto; /* Mantém a proporção original da imagem */
+}
+
 #section1 {
   position: relative;
   z-index: 0;
@@ -43,6 +63,14 @@
   width: 50%;
   height: 40px;
 }
+
+.text-left,
+.text-right {
+  background-color: #c08cc6;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
 
 .dashboard-table th {
   background-color: #fce4f2;
