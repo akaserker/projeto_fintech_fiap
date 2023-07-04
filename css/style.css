@@ -15,6 +15,21 @@ body {
   padding: 0;
   font-family: Geologica, sans-serif;
   scroll-behavior: smooth;
+  color: #5d48a8;
+}
+
+/* LINK */
+
+a {
+  color: #5d48a8;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #e65bc3;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 .section {
@@ -27,13 +42,18 @@ body {
 }
 
 .section h2 {
-  font-size: 3rem;
-  color: #e65bc3;
+    color: #5d48a8;
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .section p {
   font-size: 1.5rem;
   color: #5d48a8;
+  text-align: justify;
 }
 
 .fp-tableCell{
